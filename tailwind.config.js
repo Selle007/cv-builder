@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
@@ -22,6 +23,8 @@ module.exports = {
     },
   },
   plugins: [
+    // eslint-disable-next-line no-undef
     require('@tailwindcss/aspect-ratio'),
   ],
 }
+
