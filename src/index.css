@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  font-family: "General-Sans";
+  font-weight: 500;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  color: rgb(2, 17, 23);
+  background: rgba(2, 17, 23, 0.7);
+  border-radius: 10px;
+}
+@font-face {
+  font-family: "General-Sans";
+  src: url("/src/assets/GeneralSans-Variable.ttf");
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.animate-modal-zoom-in {
+  animation: modalZoomIn 0.5s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modalZoomIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

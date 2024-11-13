@@ -1,0 +1,44 @@
+h1 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h2 {
+  color: var(--003343, #003343);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+p {
+  color: var(--003343, #003343);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Prevent elements from being split across pages */
+.avoid-page-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@media print {
+  .content-section {
+    margin: 0;
+    padding: 1cm; /* Add padding inside the page boundaries */
+  }
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
